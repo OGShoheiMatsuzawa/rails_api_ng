@@ -37,7 +37,7 @@ export class PostsComponent implements OnInit {
   }
 
   getPostData() {
-    this.http.get("http://localhost:3000/api/v1/posts")
+    this.http.get("https://dev-sandbox-mat01-be.sakuramobile.jp/api/v1/posts")
     .subscribe((result: ApiData) => {
       this.posts = result.data;
       console.log(this.posts);
@@ -45,7 +45,7 @@ export class PostsComponent implements OnInit {
   }
 
   postPostData(data: any) {
-    this.http.post("http://localhost:3000/api/v1/posts", data)
+    this.http.post("https://dev-sandbox-mat01-be.sakuramobile.jp/api/v1/posts", data)
     .subscribe((response) => {
       console.log(response);
     })
