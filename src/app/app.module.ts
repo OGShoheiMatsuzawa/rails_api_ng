@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { PathLocationStrategy, LocationStrategy } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http'; // 追加
 // import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // 追加
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms'; // 追加
@@ -25,7 +26,7 @@ import { SigninComponent } from './signin/signin.component';
     // FormGroup, // 追加
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ { provide: LocationStrategy, useClass: PathLocationStrategy } ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
