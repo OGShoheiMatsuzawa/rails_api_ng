@@ -1,0 +1,11 @@
+<h1>auth works!</h1>
+
+<form [formGroup]="signupForm" (ngSubmit)="postAuthData(signupForm.value)">
+  <label>email</label>
+  <input type="text" formControlName="email"><br>
+  <label>password</label>
+  <input type="password" formControlName="password"><br>
+  <label>password_confirmation</label>
+  <input type="password" formControlName="password_confirmation"><br>
+  <button>登録</button>
+</form>

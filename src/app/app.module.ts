@@ -7,11 +7,15 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms'; //
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
+import { AuthComponent } from './auth/auth.component';
+import { SigninComponent } from './signin/signin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent
+    PostsComponent,
+    AuthComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,

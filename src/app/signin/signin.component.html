@@ -1,0 +1,9 @@
+<p>signin works!</p>
+
+<form [formGroup]="signinForm" (ngSubmit)="signinData(signinForm.value)">
+  <label>email</label>
+  <input type="text" formControlName="email"><br>
+  <label>password</label>
+  <input type="password" formControlName="password"><br>
+  <button>ログイン</button>
+</form>
